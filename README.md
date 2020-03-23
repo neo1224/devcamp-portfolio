@@ -13,14 +13,13 @@
 
 ### Code Examples
 
-ruby
-```
+
+```ruby
 def my_great method
 puts "here it is"
 end
 ```
 
-javascript
-```
+```javascript
 alert('Hello there');
 ```
