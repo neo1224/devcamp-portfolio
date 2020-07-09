@@ -16,16 +16,17 @@
   <body class="text-center">
     <div class="cover-container d-flex w-100 h-100 p-3  mx-auto flex-column">
       <header class="masthead mb-auto">
-        <div class="inner">
+        
           <%= render "shared/application_nav" %>
-
-          <%= login_helper %>
-            <%= yield %>
-            <%= copyright_generator %>
+      </header>
+        <div class="inner">
+          <%= yield %>
+        </div>
+          <%= render "shared/application_footer" %>
 
            <%= source_helper("application") %>
-        </div>
-      </header>
+        
+      
     </div>
   </body>
 </html>
