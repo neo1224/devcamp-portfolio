@@ -8,6 +8,12 @@ Rails.application.routes.draw do
   get 'contact',  to: 'pages#contact'
   get 'angular-items', to: 'portfolios#angular'
 
+devise_scope :user do  
+   get 'logout' => 'devise/sessions#destroy'     
+end
+
+
+
   resources :blogs do
   	member do
   		get :toggle_status
